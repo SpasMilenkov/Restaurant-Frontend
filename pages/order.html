@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <script src="../javascript/index.js" type="module"></script>
+    <script src="../javascript/image-data.js" type="module"></script>
+    <title>Restaurant: Order</title>
+</head>
+
+<body>
+    <main>
+        <header id="menu">
+            <nav id="navigation">
+                <ul>
+                    <li class="nav-list-item">
+                        <a href="./index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="./menu.html" class="nav-link">Menu</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="./order.html" class="nav-link">Order</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div id="menu-wrapper">
+            <div id="burger-menu">
+                <span></span>
+            </div>
+        </div>
+        <section id="orders">
+            <div class="form-wrapper">
+                <h2 class="subtitle">Submit your order</h2>
+                <form action="submit-reservation.php" method="post">
+                    <label>
+                        Name:
+                        <input type="text" name="name" placeholder="Full Name" required>
+                    </label>
+                    <label>
+                        Email:
+                        <input type="email" name="email" placeholder="Email" required>
+
+                    </label>
+                    <label>Address:
+                        <input type="text" name="reservation-date" placeholder="Your address" required>
+                    </label>
+                    <div id="items-wrapper">
+                        <h2 class="subtitle">Items in the order</h2>
+                        <div id="order-items">
+
+                        </div>
+                        <h3 class="subtitle" id="price">Price: </h3>
+                    </div>
+                    <button id="submit-button" class="main-button">Order</button>
+                </form>
+            </div>
+        </section>
+        <section id="success">
+            <div id="success-card">
+                <h1 class="title">Order successful!</h1>
+                <a href="./index.html" class="main-button">Home</a>
+            </div>
+        </section>
+
+        <footer>
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <p>123 Food Street, Flavor Town, USA</p>
+                <p>Email: contact@restaurantname.com | Phone: (123) 456-7890</p>
+            </section>
+            <section class="social-media">
+                <h2>Follow Us</h2>
+                <p>Stay connected with us on social media!</p>
+            </section>
+        </footer>
+    </main>
+</body>
+
+</html>

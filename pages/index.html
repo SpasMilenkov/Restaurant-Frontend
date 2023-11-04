@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <script src="../javascript/index.js" type="module" defer></script>
+    <script src="../javascript/image-data.js" type="module" defer></script>
+    <title>Restaurant: Home</title>
+</head>
+
+<body>
+    <header id="menu">
+        <nav id="navigation">
+            <ul>
+                <li class="nav-list-item">
+                    <a href="./index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="./menu.html" class="nav-link">Menu</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="./order.html" class="nav-link">Order</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div id="menu-wrapper">
+        <div id="burger-menu">
+            <span></span>
+        </div>
+    </div>
+
+
+    <section id="home">
+        <div class="hero-container">
+            <h1 class="title">Welcome to Fancy Restaurant.com</h1>
+            <p class="subtitle">Quality food & memorable experiences.</p>
+        </div>
+    </section>
+
+    <section id="menu-list">
+        <h2 class="title">Our Menu</h2>
+        <p class="subtitle">Check out our selection of appetizers, entrees, and desserts. Whether you're in the mood for
+            a hearty meal or
+            a
+            light bite, our menu has something for everyone.</p>
+        <div id="menu-preview">
+            <div data-id="1" class="menu-item">
+                <img class="menu-item-img" src="/assets/images/menu-items/menu-item1.jpg" alt="Chocolate delight">
+                <div class="card-content">
+                    <div class="info-wrapper">
+                        <h3 class="menu-heading">Chocolate delight</h3>
+                        <p class="item-description">Layers of rich chocolate and creamy filling elegantly served in a crystal dish, perfect for
+                            satisfying your sweet
+                            cravings.</p>
+                    </div>
+                    <h3 class="subtitle price">Price: 15.99</h3>
+                    <button class="main-button" click="addToOrder">Add to your order</button>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img class="menu-item-img" src="/assets/images/menu-items/menu-item2.jpg"
+                    alt="Chocolate Berry Crepe Sundae">
+                <div class="card-content">
+                    <div class="info-wrapper">
+                        <h3 class="menu-heading">Chocolate Berry Crepe Sundae</h3>
+                        <p class="item-description">A delicate chocolate crepe enveloping fresh slices of strawberries and bananas, crowned with
+                            whipped cream, blueberries,
+                            and a scoop of chocolate ice cream.</p>
+                    </div>
+                    <h3 class="subtitle">Price: 15.99</h3>
+                    <button class="main-button" click="addToOrder">Add to your order</button>
+
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img class="menu-item-img" src="/assets/images/menu-items/menu-item10.jpg" alt="Chocolate Decadence">
+                <div class="card-content">
+                    <div class="info-wrapper">
+                        <h3 class="menu-heading">Chocolate Decadence</h3>
+                        <p class="item-description">A rich and moist chocolate lava cake takes center stage, drizzled with a glossy chocolate
+                            sauce.
+                            Its richness is
+                            beautifully balanced by a scoop of vanilla ice cream, crowned with a cherry that adds a pop
+                            of
+                            color and a tangy flavor
+                            note. The dark background accentuates the dish, ensuring it captures all your attention.</p>
+                    </div>
+                    <h3 class="subtitle">Price: 15.99</h3>
+                    <button class="main-button" click="addToOrder">Add to your order</button>
+
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img class="menu-item-img" src="/assets/images/menu-items/menu-item11.jpg" alt="Berried Delight">
+                <div class="card-content">
+                    <div class="info-wrapper">
+                        <h3 class="menu-heading">Berried Delight</h3>
+                        <p class="item-description">A perfect finale from a summer dessert menu, this treat presents a layered strawberry
+                            delight. A
+                            buttery crust forms the
+                            base, topped with a layer of vibrant yellow custard or pudding. The next layer features
+                            juicy,
+                            sliced strawberries
+                            nestled perfectly, and everything is blanketed with a light whipped cream. Each bite
+                            promises a
+                            symphony of textures and
+                            flavors, making it a crowd-favorite at any upscale eatery.</p>
+                    </div>
+                    <h3 class="subtitle">Price: 15.99</h3>
+                    <button class="main-button" click="addToOrder">Add to your order</button>
+
+                </div>
+
+            </div>
+            <div class="menu-item">
+                <img class="menu-item-img" src="/assets/images/menu-items/menu-item10.jpg" alt="Chocolate Decadence">
+                <div class="card-content">
+                    <div class="info-wrapper">
+                        <h3 class="menu-heading">Chocolate Decadence</h3>
+                        <p>A rich and moist chocolate lava cake takes center stage, drizzled with a glossy chocolate
+                            sauce.
+                            Its richness is
+                            beautifully balanced by a scoop of vanilla ice cream, crowned with a cherry that adds a pop
+                            of
+                            color and a tangy flavor
+                            note. The dark background accentuates the dish, ensuring it captures all your attention.</p>
+                    </div>
+                    <h3 class="subtitle">Price: 15.99</h3>
+                    <button class="main-button" click="addToOrder">Add to your order</button>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img class="menu-item-img" src="/assets/images/menu-items/menu-item11.jpg" alt="Berried Delight">
+                <div class="card-content">
+                    <div class="info-wrapper">
+                        <h3 class="menu-heading">Berried Delight</h3>
+                        <p>A
+                            buttery crust forms the
+                            base, topped with a layer of vibrant yellow custard or pudding. The next layer features
+                            juicy,
+                            sliced strawberries
+                            nestled perfectly, and everything is blanketed with a light whipped cream. Each bite
+                            promises a
+                            symphony of textures and
+                            flavors, making it a crowd-favorite at any upscale eatery.</p>
+                    </div>
+                    <h3 class="subtitle">Price: 15.99</h3>
+                    <button class="main-button" click="addToOrder">Add to your order</button>
+
+                </div>
+            </div>
+
+
+        </div>
+        <a class="main-button" href="menu.html">View Full Menu</a>
+    </section>
+
+    <footer>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>123 Food Street, Flavor Town, Bulgaria</p>
+            <p>Email: contact@restaurantname.com | Phone: +359123456789</p>
+        </section>
+        <section class="social-media">
+            <h2>Follow Us</h2>
+            <p>Stay connected with us on social media!</p>
+        </section>
+    </footer>
+</body>
+
+</html>
